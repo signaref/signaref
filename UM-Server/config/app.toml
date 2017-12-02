@@ -1,0 +1,22 @@
+# A sample TOML config file.
+[connections]
+Address = ":9392"  
+DBConnection="mongodb://localhost:27017"
+
+[directories]
+Root="uploads/"
+Quarantune="quarantine/"
+FullImage="full/"
+MediumImage="medium/"
+Invalid="invalid/"
+Temp="temp/"
+CounterFile ="counter.txt"
+
+[image]  
+MaxHeight=300
+MaxWidth=300
+ResizeHeight=150
+ResizeWidth=150
+NoOfImages=4
+
+
