@@ -13,4 +13,5 @@
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
 golang.org/
-githug.com/
+github.com/
+gopkg.in/

@@ -3,16 +3,16 @@ package models
 import "gopkg.in/mgo.v2/bson"
 
 type Scope struct {
-	ID         bson.ObjectId `json:"id" bson:"_id,omitempty"`
-	Name       string        `json:"name" bson:"name"`
-	Desc       string        `json:"desc" bson:"desc"`
-	Scope      string        `json:"scope" bson:"scope"`
-	Scope_Desc string        `json:"scope_desc" bson:"scope_desc"`
-	Status     string        `json:"status" bson:"status"`
-	TimeStamp  string        `json:"timestamp" bson:"timestamp"`
+	ID        bson.ObjectId `json:"id" bson:"_id,omitempty"`
+	URI       string        `json:"uri" bson:"uri"`
+	Scope     string        `json:"scope" bson:"scope"`
+	Module    string        `json:"module" bson:"module"`
+	Method    string        `json:"method" bson:"method"`
+	Status    string        `json:"status" bson:"status"`
+	TimeStamp string        `json:"timestamp" bson:"timestamp"`
 }
 
-func ValidateScope(s Scope) string {
+/*func ValidateScope(s Scope) string {
 	if s.Name == "" {
 		return "Role Name field is empty"
 	}
@@ -42,3 +42,4 @@ func ValidateScopeForUpdate(s Scope) string {
 	}
 	return ""
 }
+*/
